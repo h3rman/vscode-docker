@@ -73,11 +73,9 @@ RUN \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     echo "*** Adding user developer ***" && \
-    useradd -s /bin/bash -m developer && \
-    mkdir -p /home/developer/.ssh
-    chown developer:developer /home/developer/.ssh
-    mkdir -p /data && \
-    chown developer:developer /data
+    useradd -s /bin/bash -m developer
+  
+VOLUME /data
 
 EXPOSE 22
 
