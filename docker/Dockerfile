@@ -83,4 +83,4 @@ COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
 ENTRYPOINT [ "/bin/bash", "/usr/local/bin/entrypoint.sh" ]
 
-CMD [ "/usr/sbin/sshd", "-D" ]
+#CMD [ "/usr/sbin/sshd", "-D" ]
